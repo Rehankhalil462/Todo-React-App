@@ -4,13 +4,16 @@ const appVersion = 'v1.00';
 // Files to Cache
 const files = [
   '/',
-  'manifest.json',
   'index.html',
+  'manifest.json',
   '64x64.png',
   '192x192.png',
-  'main.d3f1f9f9.chunk.css',
-  'main.adc079f0.chunk.js',
-  '2.6b3af406.chunk.js',
+  '512x512.png',
+  '/static/css/main.d3f1f9f9.chunk.css',
+  // '/static/css/main.d3f1f9f9.chunk.css.map',
+  '/static/js/2.6b3af406.chunk.js',
+  '/static/js/main.fa252554.chunk.js',
+  '/static/js/runtime-main.5020f1d9.js',
 ];
 const self = this;
 
