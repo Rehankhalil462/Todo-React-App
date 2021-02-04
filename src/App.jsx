@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import {AppStyles,HeaderStyles,FormStyles,ButtonStyles} from './App.styles';
 import ListItems from './ListItems';
 
@@ -6,6 +6,18 @@ const App = () => {
   const [items, setItems] = useState([]);
   const [currentItem, setCurrentItem] = useState({ text: '', key: '' });
 
+  // this is where persistance is done in local storage .....
+  useEffect(()=>{
+    const data=localStorage.getItem('itemlist');
+    if(data){
+      setItems(JSON.parse(data));
+    }
+  },[]);
+
+  useEffect(()=>{
+    localStorage.setItem('itemlist',JSON.stringify(items));
+  });
+  
   const handleInput = (e) => {
     setCurrentItem({
       text: e.target.value,
