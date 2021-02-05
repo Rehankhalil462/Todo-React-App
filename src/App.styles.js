@@ -8,8 +8,8 @@ export const AppStyles = styled.div`
   overflow: auto;
   max-height: 70px;
   @media screen and (max-width: 800px) {
-    min-height: 600px;
-    margin: 15px auto;
+    min-height: 650px;
+    margin: 0px auto;
     width: 360px;
   }
 `;
