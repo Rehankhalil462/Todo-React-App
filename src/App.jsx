@@ -19,6 +19,7 @@ const App = () => {
   });
   
   const handleInput = (e) => {
+   
     setCurrentItem({
       text: e.target.value,
       key: Date.now()
@@ -27,9 +28,14 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const checkItem = currentItem;
-    setItems([...items, checkItem]);
-    setCurrentItem({ text: '', key: '' });
+    if (currentItem.text === '') {
+alert('Please Enter Some Text!!!');
+    }else{
+      const checkItem = currentItem;
+      setItems([...items, checkItem]);
+      setCurrentItem({ text: '', key: '' });
+
+    }
   };
 
 
