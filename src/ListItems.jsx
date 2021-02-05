@@ -1,5 +1,5 @@
 import React from 'react';
-import {TotalListItems,ListItemsParagraph} from './ListItems.styles';
+import {TotalListItems,ListItemsParagraph,IconContainer} from './ListItems.styles';
 import FlipMove from 'react-flip-move';
 
 const ListItems = ({ items,deleteItems }) => {
@@ -7,10 +7,11 @@ const ListItems = ({ items,deleteItems }) => {
         return (
 
             <TotalListItems key={item.key}>
-                <ListItemsParagraph>{item.text}
-                <span className='icon' onClick={()=>deleteItems(item.key)}>&#9986;</span>
-
+                <ListItemsParagraph>
+                    {item.text}
                 </ListItemsParagraph>
+                <IconContainer className='icon' onClick={()=>deleteItems(item.key)}>&#9986;</IconContainer>
+
             </TotalListItems>
            
         )
