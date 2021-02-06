@@ -3,9 +3,9 @@
   "name": "ToDo App by Rehan Khalil",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "64x64.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon",
+      "type": "image/png",
       "purpose": "any maskable"
 
     },
