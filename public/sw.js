@@ -58,8 +58,11 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', function (event) {
   event.respondWith(
-    caches.match(event.request).then(function (response) {
-      return response || fetch(event.request);
-    })
+    caches
+      .match(event.request)
+      .then(function (response) {
+        return response || fetch(event.request);
+      })
+      .catch((error) => console.log('this is error', error))
   );
 });
