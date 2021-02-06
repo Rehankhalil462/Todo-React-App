@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import {AppStyles,HeaderStyles,FormStyles,ButtonStyles} from './App.styles';
 import ListItems from './ListItems';
-import {Alert} from 'react-bootstrap';
+
 
 
 
@@ -49,14 +49,8 @@ setShow(true);
 
   return (
     <>
-      <Alert show={show} variant="danger" onClose={() => setShow(false)} dismissible>
-        <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
-        <p>
-          Please enter text to add task!!!
-        </p>
-      </Alert>
-
-    {!show && <AppStyles>
+    
+     <AppStyles>
       <HeaderStyles>
         <form className='to-do-form' onSubmit={handleSubmit}>
           <FormStyles type='text' placeholder='Add Tasks...' value={currentItem.text} onChange={handleInput} />
@@ -64,7 +58,7 @@ setShow(true);
         </form>
       </HeaderStyles>
       <ListItems items={items} show={show} deleteItems={deleteItems} />
-    </AppStyles>}
+    </AppStyles>
 </>
   )};
 export default App;
