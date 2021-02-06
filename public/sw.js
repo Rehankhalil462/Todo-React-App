@@ -9,10 +9,10 @@ const files = [
   '64x64.png',
   '192x192.png',
   '512x512.png',
-  '/static/css/main.d3f1f9f9.chunk.css',
+  '/static/css/main.ff0285fe.chunk.css',
   // '/static/css/main.d3f1f9f9.chunk.css.map',
-  '/static/js/2.6b3af406.chunk.js',
-  '/static/js/main.fa252554.chunk.js',
+  '/static/js/2.7ccfe792.chunk.js',
+  '/static/js/main.892183d9.chunk.js',
   '/static/js/runtime-main.5020f1d9.js',
 ];
 const self = this;

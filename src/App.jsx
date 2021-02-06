@@ -1,14 +1,13 @@
 import React, { useState,useEffect } from 'react';
 import {AppStyles,HeaderStyles,FormStyles,ButtonStyles} from './App.styles';
 import ListItems from './ListItems';
-
+import swal from 'sweetalert';
 
 
 
 const App = () => {
   const [items, setItems] = useState([]);
   const [currentItem, setCurrentItem] = useState({ text: '', key: '' });
-  const[show,setShow]=useState(false);
 
   // this is where persistance is done in local storage .....
   useEffect(()=>{
@@ -32,8 +31,7 @@ const App = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (currentItem.text === '') {
-setShow(true);
-    }else{
+      swal("Oops!", "Please enter some text!", "error");    }else{
       const checkItem = currentItem;
       setItems([...items, checkItem]);
       setCurrentItem({ text: '', key: '' });
@@ -57,7 +55,7 @@ setShow(true);
           <ButtonStyles type='submit'>Add</ButtonStyles>
         </form>
       </HeaderStyles>
-      <ListItems items={items} show={show} deleteItems={deleteItems} />
+      <ListItems items={items}  deleteItems={deleteItems} />
     </AppStyles>
 </>
   )};
