@@ -23,14 +23,13 @@ self.addEventListener('install', (event) => {
     caches
       .open(appVersion)
       .then((cache) => {
-        return cache.addAll(files);
+        cache.addAll(files);
       })
       .catch((error) => {
         console.error('Error in adding files to Cache', error);
       })
   );
   console.info('Service Worker is Installed');
-  self.skipWaiting();
 });
 
 //Activate:Manage Old Caches
@@ -50,7 +49,6 @@ self.addEventListener('activate', (event) => {
       )
     )
   );
-  return self.clients.claim();
 });
 
 //Fetch
