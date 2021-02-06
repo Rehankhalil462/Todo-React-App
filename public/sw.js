@@ -4,7 +4,6 @@ const appVersion = 'v1.00';
 // Files to Cache
 const files = [
   '/',
-  '/index.html',
   'index.html',
   'manifest.json',
   '64x64.png',
