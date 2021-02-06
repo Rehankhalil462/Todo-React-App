@@ -5,10 +5,16 @@ const appVersion = 'v1.00';
 const files = [
   '/',
   '/index.html',
+  'index.html',
   'manifest.json',
   '64x64.png',
   '192x192.png',
   '512x512.png',
+  '/favicon.ico',
+  '/static/css/main.ff0285fe.chunk.css',
+  '/static/js/2.666b4dcc.chunk.js',
+  '/static/js/main.416df751.chunk.js',
+  '/static/js/runtime-main.094884d4.js',
 ];
 const self = this;
 
