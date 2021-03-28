@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const AppStyles = styled.div`
+  min-height: 530px;
   background: linear-gradient(45deg, black, transparent);
-  min-height: 580px;
   width: 400px;
   margin: 40px auto;
   overflow: auto;
   max-height: 70px;
   @media screen and (max-width: 800px) {
-    min-height: 700px;
+    min-height: 560px;
     margin: 15px auto;
     width: 360px;
   }

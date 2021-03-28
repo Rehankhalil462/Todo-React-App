@@ -11,8 +11,8 @@ const files = [
   '512x512.png',
   '/static/css/main.ff0285fe.chunk.css',
   // '/static/css/main.d3f1f9f9.chunk.css.map',
-  '/static/js/2.7ccfe792.chunk.js',
-  '/static/js/main.892183d9.chunk.js',
+  '/static/js/2.af99e0dd.chunk.js',
+  '/static/js/main.43ac1699.chunk.js',
   '/static/js/runtime-main.5020f1d9.js',
 ];
 const self = this;
