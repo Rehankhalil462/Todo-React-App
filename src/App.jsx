@@ -15,14 +15,14 @@ const App = () => {
 
   // this is where persistance is done in local storage .....
   useEffect(() => {
-    const data = localStorage.getItem('itemlist');
+    const data = localStorage.getItem('to-doslist');
     if (data) {
       setItems(JSON.parse(data));
     }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('itemlist', JSON.stringify(items));
+    localStorage.setItem('todoslist', JSON.stringify(items));
   });
 
   const handleInput = (e) => {
