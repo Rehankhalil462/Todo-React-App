@@ -15,7 +15,7 @@ const App = () => {
 
   // this is where persistance is done in local storage .....
   useEffect(() => {
-    const data = localStorage.getItem('to-doslist');
+    const data = localStorage.getItem('todoslist');
     if (data) {
       setItems(JSON.parse(data));
     }
